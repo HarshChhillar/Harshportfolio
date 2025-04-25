@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // ✅ required for animations
 import { FaLinkedin, FaGithub, FaTwitter,  } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si"; 
-import BankingScreen from "../../assets/project/BankingScreen.jpeg";
+import BankingScreen from "../../assets/project/Bankingscreen.jpeg";
 import Forest from "../../assets/project/Forest.jpeg"
 import Website from "../../assets/project/Website.jpeg"
 
