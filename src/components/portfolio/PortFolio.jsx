@@ -60,7 +60,7 @@ export default function Portfolio() {
               Tell Me More
             </button>
             <a
-              href="/resume.pdf"
+              href="/Harsh_Resume.pdf"
               className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
             >
               Get Resume
@@ -194,7 +194,9 @@ export default function Portfolio() {
       {/* Interested Section */}
       <section className="text-center py-20 px-6">
         <h2 className="text-5xl font-bold text-white-300 mb-6">Interested in Working Together?</h2>
-        <button className="bg-purple-600 hover:bg-purple-500 px-6 py-3 rounded-full text-white">Get Resume</button>
+      
+        <button
+         className="bg-purple-600 hover:bg-purple-500 px-6 py-3 rounded-full text-white">Get Resume</button>
       </section>
 
       {/* Contact Section */}
