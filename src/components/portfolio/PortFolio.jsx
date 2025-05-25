@@ -20,12 +20,12 @@ export default function Portfolio() {
       <header className="sticky top-0 z-50 bg-black bg-opacity-70 backdrop-blur-md shadow-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <h1 className="text-4xl font-bold text-white-400">Harsh</h1>
-          <nav className="flex  space-x-6">
+          <nav className="flex  space-x-8">
             {['Home', 'Project', 'Contact'].map(link => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className=" text-xl text-white-200 hover:text-blue-900"
+                className=" text-base text-white-200 hover:text-blue-900"
               >
                 {link}
               </a>
@@ -34,40 +34,42 @@ export default function Portfolio() {
         </div>
       </header>
 
-      {/* Home Section */}
-      <section className="h-[85vh] flex items-center justify-center text-center px-4 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800">
-        <div>
-          <motion.h1
-            className="text-2xl md:text-xl font-extrabold mb-4 text-white-300 drop-shadow"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Hey, I'm Harsh 👋
-          </motion.h1>
-          <motion.p
-            className="text-6xl md:text-7xl text-white leading-snug"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            I enjoy <span className="text-blue-400"> building</span> and <span className="text-blue-400">designing</span> <br />
-            for the web.
-          </motion.p>
+    
+     {/* Home Section */}
+<section id="home" className="h-[85vh] flex items-center justify-center text-center px-4 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800">
+  <div>
+    <motion.h1
+      className="text-2xl md:text-xl font-extrabold mb-4 text-white-300 drop-shadow"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      Hey, I'm Harsh 👋
+    </motion.h1>
+    <motion.p
+      className="text-6xl md:text-7xl text-white leading-snug"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 0.8 }}
+    >
+      I enjoy <span className="text-blue-400"> building</span> and <span className="text-blue-400">designing</span> <br />
+      for the web.
+    </motion.p>
 
-          <div className="mt-8 flex justify-center gap-4">
-            <button className="bg-slate-600 hover:bg-blue-500 text-blue-400 px-6 py-2 rounded-xl transition shadow">
-              Tell Me More
-            </button>
-            <a
-              href="/Harsh_Resume.pdf"
-              className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
-            >
-              Get Resume
-            </a>
-          </div>
-        </div>
-      </section>
+    <div className="mt-8 flex justify-center gap-4">
+      <button className="bg-slate-600 hover:bg-blue-500 text-blue-400 px-6 py-2 rounded-xl transition shadow">
+        Tell Me More
+      </button>
+      <a
+        href="/Harsh_Resume.pdf"
+        className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
+      >
+        Get Resume
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       <section id="project" className="py-20 px-6 bg-slate-900 text-white">
