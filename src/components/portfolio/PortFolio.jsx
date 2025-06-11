@@ -2,10 +2,12 @@ import React from "react";
 import { motion } from "framer-motion"; // ✅ required for animations
 import { FaLinkedin, FaGithub, FaTwitter,  } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss } from 'react-icons/si';
 import { SiNetlify } from "react-icons/si"; 
 import BankingScreen from "../../assets/project/Bankingscreen.jpeg";
 import Forest from "../../assets/project/Forest.jpeg"
 import Website from "../../assets/project/Website.jpeg"
+import Servbuddy from "../../assets/project/Servbuddy.jpeg"
 
 
 
@@ -52,7 +54,7 @@ export default function Portfolio() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      I enjoy <span className="text-blue-400"> building</span> and <span className="text-blue-400">designing</span> <br />
+      I enjoy <span className="text-blue-900"> building</span> and <span className="text-blue-900">designing</span> <br />
       for the web.
     </motion.p>
 
@@ -61,7 +63,7 @@ export default function Portfolio() {
         Tell Me More
       </button>
       <a
-        href="/Harsh_Resume.pdf"
+        href="/Harsh.pdf"
         className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
       >
         Get Resume
@@ -104,14 +106,23 @@ export default function Portfolio() {
         netlify: "https://mauli-website.netlify.app/",
         skills: ["HTML5", "Tailwind CSS",  "REACT", "ReactRouter" ],
       },
+       {
+        image: Servbuddy,
+        title: "Servbuddy Website  ",
+        description:
+          "SERVBUDDY is a modern SaaS-based business website designed to promote digital services including SaaS (Software as a Service), PMASS (Project Management as a Service), and Maintenance solutions. The project focuses on clean UI, responsive design, and user engagement",
+        github: "",
+        netlify: "https://servbuddy.in/",
+        skills: ["HTML5", "TailwindCSS",  "REACT", "ReactRouter" ],
+      },
     ].map((project, index) => (
       <div key={index}>
         {/* Image inside a border */}
-        <div className="border-2 border-white rounded-xl p-2 overflow-hidden">
+        <div className="border-2 border-blue-900  rounded-xl p-2 overflow-hidden">
           <img
             src={project.image}
             alt={project.title}
-            className="rounded-lg w-full h-48 object-cover"
+            className="rounded-lg w-full h-48 object-cover "
           />
         </div>
 
@@ -187,6 +198,10 @@ export default function Portfolio() {
       <div className="bg-slate-800 p-4 rounded-xl flex flex-col items-center">
         <FaGitAlt className="text-4xl text-red-500 mb-2" />
         <span>Git</span>
+      </div>
+      <div className="bg-slate-800 p-4 rounded-xl flex flex-col items-center">
+        < SiTailwindcss  className="text-4xl text-red-500 mb-2" />
+        <span>TailwindCss</span>
       </div>
     </div>
   </div>
