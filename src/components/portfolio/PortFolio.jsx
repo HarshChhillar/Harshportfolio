@@ -21,7 +21,7 @@ export default function Portfolio() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-black bg-opacity-70 backdrop-blur-md shadow-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-4xl font-bold text-white-400">Harsh</h1>
+          <h1 className="text-4xl font-bold text-white-400 hover:text">Harsh</h1>
           <nav className="flex  space-x-8">
             {['Home', 'Project', 'Contact'].map(link => (
               <a
