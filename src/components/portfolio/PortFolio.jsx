@@ -8,6 +8,7 @@ import BankingScreen from "../../assets/project/Bankingscreen.jpeg";
 import Forest from "../../assets/project/Forest.jpeg"
 import Website from "../../assets/project/Website.jpeg"
 import Servbuddy from "../../assets/project/Servbuddy.jpeg"
+import Medglobe from "../../assets/project/Medglobe.png"
 
 
 
@@ -63,7 +64,7 @@ export default function Portfolio() {
         Tell Me More
       </button>
       <a
-        href="/Harsh.pdf"
+        href="/Harsh resume.pdf"
         className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
       >
         Get Resume
@@ -115,6 +116,16 @@ export default function Portfolio() {
         netlify: "https://servbuddy.in/",
         skills: ["HTML5", "TailwindCSS",  "REACT", "ReactRouter" ],
       },
+ {
+        image: Medglobe,
+        title: "MedGlobe Website  ",
+        description:
+          "MedGlobe is a responsive healthcare web application built to make medical information and services more accessible. The project focuses on delivering a smooth user experience with a modern UI, helping users easily navigate healthcare resources and manage health-related needs online.",
+        github: "",
+        netlify: "https://medglobe.health/",
+        skills: ["HTML5", "TailwindCSS","Javascript" , "REACT", "ReactRouter" ],
+      },
+
     ].map((project, index) => (
       <div key={index}>
         {/* Image inside a border */}
