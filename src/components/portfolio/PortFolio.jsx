@@ -64,7 +64,7 @@ export default function Portfolio() {
         Tell Me More
       </button>
       <a
-        href="/Harsh resume.pdf"
+        href="NewHarsh.pdf"
         className="bg-white hover:bg-gray-100 text-purple-600 px-6 py-2 rounded-xl transition shadow"
       >
         Get Resume
